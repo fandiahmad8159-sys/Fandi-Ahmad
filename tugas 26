@@ -1,0 +1,276 @@
+# assign value to site_name variable
+site_name = 'programiz.pro'
+
+print(site_name)
+
+# Output: programiz.pro 
+
+site_name = 'programiz.pro'
+print(site_name)
+
+# assigning a new value to site_name
+site_name = 'apple.com'
+
+print(site_name) 
+
+integer_number = 123
+float_number = 1.23
+
+new_number = integer_number + float_number
+
+# display new value and resulting data type
+print("Value:",new_number)
+print("Data Type:",type(new_number)) 
+
+num_string = '12'
+num_integer = 23
+
+print("Data type of num_string before Type Casting:",type(num_string))
+
+# explicit type conversion
+num_string = int(num_string)
+
+print("Data type of num_string after Type Casting:",type(num_string))
+
+num_sum = num_integer + num_string
+
+print("Sum:",num_sum)
+print("Data type of num_sum:",type(num_sum)) 
+
+print('Python is powerful')
+
+# Output: Python is powerful 
+
+print('Good Morning!')
+print('It is rainy today') 
+
+# print with end whitespace
+print('Good Morning!', end= ' ')
+
+print('It is rainy today') 
+
+x = 15
+y = 4
+print('x + y = ',x+y)
+print('x - y = ',x-y)
+print('x * y = ',x*y)
+print('x / y = ',x/y)
+print('x // y = ',x//y)
+print('x ** y = ',x**y)  
+
+x = True
+y = False
+print('x and y is',x and y)
+print('x or y is',x or y)
+print('not x is',not x) 
+
+if condition:
+    # This code runs only if condition is True 
+
+    age = int(input("Enter your age: "))
+
+# Check if age is 18 or more
+if age >= 18:
+    print("Grant access to the website.")
+
+print("Program complete.")
+
+# Username and password stored in database
+username_db = "admin"
+password_db = "sparrow@123"
+
+# Username and password entered by the user
+username = input("Enter username: ")
+password = input("Enter password: ") 
+
+# Check if username & password in database matches user's input
+if (username == username_db) and (password == password_db):
+    print("Welcome back.")
+else:
+    print("Access denied.") 
+
+    # A list of three AI models
+models = ["Fable", "ChatGPT", "Gemini"]
+
+# Access items of the list one by one
+for model in models:
+    print(model)
+    print("---") 
+
+    numbers = [1, 2, 3]
+
+for num in numbers:
+    print(f"Processing: {num}")
+    print(f"Done with: {num}")
+
+# This statement is outside the loop
+print('All done') 
+
+number = float(input("Enter a number: "))
+
+while number >= 0.0:
+    print(number) 
+
+    mber = float(input("Enter a number: "))
+
+while number >= 0.0:
+    print(number)
+    
+    # Take number input again
+    number = float(input("Enter another number: ")) 
+
+    task = input("Task: ")
+
+while task != "q":
+    print("Task done!")
+    task = input("Task: ")
+
+while True:
+    number = int(input("Enter a number: "))
+    if number == 0:
+        break
+    print(number) 
+
+    number = int(input("Enter a number: "))
+for i in range(1, 6):
+
+    # Terminate the loop if i equals number
+    if i == number:
+        break
+    print(i) 
+
+    while True:
+    number = int(input("Enter a number: "))
+    if number < 0:
+        break
+    print(f"You entered {number}") 
+
+    is_valid = True
+
+if is_valid:
+    pass
+else:
+    print("Login invalid. Redirect to form.") 
+
+    # Implement token calculation later 
+def calculate_token():
+    pass     
+
+num1 = 5
+print(num1, 'is of type', type(num1))
+
+num2 = 5.42
+print(num2, 'is of type', type(num2))
+
+num3 = 8+2j
+print(num3, 'is of type', type(num3)) 
+
+print(0b1101011)  # prints 107
+
+print(0xFB + 0b10)  # prints 253
+
+print(0o15)  # prints 13 
+
+print(0b1101011)  # prints 107
+
+print(0xFB + 0b10)  # prints 253
+
+print(0o15)  # prints 13 
+
+print(0b1101011)  # prints 107
+
+print(0xFB + 0b10)  # prints 253
+
+print(0o15)  # prints 13 
+
+print(0b1101011)  # prints 107
+
+print(0xFB + 0b10)  # prints 253
+
+print(0o15)  # prints 13 
+
+# empty tuple
+my_tuple = ()
+
+# tuple having integers
+my_tuple = (1, 2, 3)
+
+# tuple with mixed datatypes
+my_tuple = (1, "Hello", 3.4)
+
+# nested tuple
+my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+
+# tuple can be created without parentheses
+# also called tuple packing
+my_tuple = 3, 4.6, "dog"
+# tuple unpacking is also possible
+a, b, c = my_tuple 
+
+>>> my_tuple = (4, 2, 3, [6, 5])
+>>> my_tuple[1] = 9  # we cannot change an element
+...
+TypeError: 'tuple' object does not support item assignment
+>>> my_tuple[3] = 9  # we cannot change an element
+...
+TypeError: 'tuple' object does not support item assignment
+>>> my_tuple[3][0] = 9   # but item of mutable element can be changed
+>>> my_tuple
+(4, 2, 3, [9, 5])
+>>> my_tuple = ('p','r','o','g','r','a','m','i','z') # tuples can be reassigned
+>>> my_tuple
+('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z') 
+
+# create a set of integer type
+student_id = {112, 114, 116, 118, 115}
+print('Student ID:', student_id)
+
+# create a set of string type
+vowel_letters = {'a', 'e', 'i', 'o', 'u'}
+print('Vowel Letters:', vowel_letters)
+
+# create a set of mixed data types
+mixed_set = {'Hello', 101, -2, 'Bye'}
+print('Set of mixed data types:', mixed_set) 
+
+# create an empty set
+empty_set = set()
+
+# create an empty dictionary
+empty_dictionary = { }
+
+# check data type of empty_set
+print('Data type of empty_set:', type(empty_set))
+
+# check data type of dictionary_set
+print('Data type of empty_dictionary:', type(empty_dictionary)) 
+
+companies = {'Lacoste', 'Ralph Lauren'}
+tech_companies = ['apple', 'google', 'apple']
+
+# using update() method
+companies.update(tech_companies)
+
+print(companies)
+
+# Output: {'google', 'apple', 'Lacoste', 'Ralph Lauren'} 
+
+# creating a dictionary
+country_capitals = {
+  "Germany": "Berlin", 
+  "Canada": "Ottawa", 
+  "England": "London"
+}
+
+# printing the dictionary
+print(country_capitals) 
+
+country_capitals = {
+  "Germany": "Berlin", 
+  "Canada": "Ottawa", 
+  "England": "London"
+}
+
+# access the value of keys
+print(country_capitals["Germany"])    # Output: Berlin
+print(country_capitals["England"])    # Output: London 
